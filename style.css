@@ -1,0 +1,58 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#welcome {
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#calculadora-container {
+    margin: 0;
+    padding: 0;
+    width: 40%;
+    height: 80%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+#calculadora {
+    margin: 0;
+    padding: 0;
+    width: 85%;
+    height: 80%;
+    border: solid 1px azure;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#display input {
+    border: 0;
+    width: 1vh;
+}
+
+table {
+    border: solid 1px black;
+
+}
+
+
