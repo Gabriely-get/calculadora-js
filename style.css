@@ -37,7 +37,7 @@ body {
     padding: 0;
     width: 85%;
     height: 80%;
-    border: solid 1px azure;
+    border: solid 3px azure;
 
     display: flex;
     flex-direction: column;
@@ -45,14 +45,30 @@ body {
     justify-content: center;
 }
 
-#display input {
+#display, input {
+    margin: 0;
+    padding: 0;
+
     border: 0;
-    width: 1vh;
+    width: 100%;
 }
 
-table {
-    border: solid 1px black;
-
+#display input {
+    height: 8vh;
+    background-color: #263650;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size:5vh;
+    font-weight: 400;
+    direction: rtl;
 }
 
+#inputs {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 80%;
+
+    border: solid 1px red;
+}
 
