@@ -14,7 +14,7 @@
         <div id="calculadora-container">
             <div id="calculadora">
                 <div id="display-container">
-                    <input id="display" type="text" readonly>
+                    <input id="display" readonly>
                 </div>
 
                 <div id="inputs">
@@ -24,29 +24,30 @@
                                 <td><input class="input-light" id="clear" type="button" value="C"></td>
                                 <td><input class="input-light operation" type="button" value="^"></td>
                                 <td><input class="input-light operation" type="button" value="/"></td>
-                                <td><input class="input-light operation" type="button" value="*"></td>
+                                <td><input class="input-light" id="backspace" type="button" value="<"></td>
                             </tr>
                             <tr>
                                 <td><input class="input-dark number" type="button" value="1"></td>
                                 <td><input class="input-dark number" type="button" value="2"></td>
                                 <td><input class="input-dark number" type="button" value="3"></td>
-                                <td><input class="input-light operation" type="button" value="+"></td>
+                                <td><input class="input-light operation" type="button" value="*"></td>
                             </tr>
                             <tr>
                                 <td><input class="input-dark number" type="button" value="4"></td>
                                 <td><input class="input-dark number" type="button" value="5"></td>
                                 <td><input class="input-dark number" type="button" value="6"></td>
-                                <td><input class="input-light operation" type="button" value="-"></td>
+                                <td><input class="input-light operation" type="button" value="+"></td>
                             </tr>
                             <tr>
                                 <td><input class="input-dark number" type="button" value="7"></td>
                                 <td><input class="input-dark number" type="button" value="8"></td>
                                 <td><input class="input-dark number" type="button" value="9"></td>
-                                <td rowspan="2"><input id="get-result" type="button" value="="></td>
+                                <td><input class="input-light operation" type="button" value="-"></td>
                             </tr>
                             <tr>
                                 <td colspan="2"><input class="input-dark number" type="button" value="0"></td>
                                 <td><input class="input-dark" id="dot" type="button" value="."></td>
+                                <td><input class="operation" id="get-result" type="button" value="="></td>
                             </tr>
                         </tbody>
                     </table>
