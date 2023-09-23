@@ -4,12 +4,14 @@ const get_result = document.querySelector("#get-result");
 const display = document.querySelector("#display");
 const clear = document.querySelector("#clear");
 const backspace = document.querySelector("#backspace");
+const dot = document.querySelector("#dot");
 
 let lastResult = 0;
 let result = 0;
 let valueBeforeOperationSymbol = 0;
 let valueAfterOperationSymbol = 0;
 let operationSetted;
+let dotClicked = false;
 
 get_result.addEventListener("click", () => {
     setDisplay(result);
@@ -28,6 +30,10 @@ backspace.addEventListener("click", () => {
     setDisplay( newDisplay.join("") );
 })
 
+dot.addEventListener("click", () => {
+    dotClicked = true;
+})
+
 function setDisplay(value) {
     display.value = value;
 }
@@ -43,9 +49,13 @@ for (let i = 0; i < number.length; i++) {
             setDisplay('');
         }
 
-setDisplay(getDisplay() + number[i].value);
+        dotClicked 
+            ? setDisplay(getDisplay() + "." + number[i].value)
+            : setDisplay(getDisplay() + number[i].value);
+
         calc(operationSetted);
         operationSetted = false;
+        dotClicked = false;
     });
     
 }
