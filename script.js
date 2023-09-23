@@ -3,6 +3,7 @@ const operation = document.querySelectorAll(".operation");
 const get_result = document.querySelector("#get-result");
 const display = document.querySelector("#display");
 const clear = document.querySelector("#clear");
+const backspace = document.querySelector("#backspace");
 
 let lastResult = 0;
 let result = 0;
@@ -17,6 +18,14 @@ get_result.addEventListener("click", () => {
 clear.addEventListener("click", () => {
     setDisplay('');
     result = '';
+    operationSetted = false;
+})
+
+backspace.addEventListener("click", () => {
+    let newDisplay = getDisplay().split("");
+    newDisplay.pop();
+
+    setDisplay( newDisplay.join("") );
 })
 
 function setDisplay(value) {
@@ -34,7 +43,7 @@ for (let i = 0; i < number.length; i++) {
             setDisplay('');
         }
 
-        setDisplay(getDisplay() + number[i].value);
+setDisplay(getDisplay() + number[i].value);
         calc(operationSetted);
         operationSetted = false;
     });
