@@ -7,6 +7,6 @@ Open the index.html file with a browser like Google Chrome.
 
 ## Todo 
 
-- [ ] Fix backspace.
+- [ x ] Fix backspace.
 - [ ] Add +/- button for set number positive or negative.
-- [ ] Can set float number using dot (.)
+- [ x ] Can set float number using dot (.)
